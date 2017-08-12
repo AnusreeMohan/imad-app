@@ -10,13 +10,23 @@ var articles ={
 articleOne :{
     title:'Article One | Anusree Mohan',
     heading:'Article One',
-    date:'August 12 2017',
+    date:'August 5 2017',
     content:`<p>This is the content for my first article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.</p>
                 <p>This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.</p>
                    <p>This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.</p>`
 },
-articleTwo :{},
-articleThree :{}
+articleTwo :{
+     title:'Article Two | Anusree Mohan',
+    heading:'Article Two',
+    date:'August 10 2017',
+    content:`<p>This is the content for my second article.</p>`
+},
+articleThree :{
+      title:'Article Three | Anusree Mohan',
+    heading:'Article Three',
+    date:'August 12 2017',
+    content:`<p>This is the content for my second article.</p>`
+}
 };
 function createTemplate(data){
     var heading = data.heading;
