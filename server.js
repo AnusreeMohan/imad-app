@@ -25,7 +25,7 @@ articleThree :{
       title:'Article Three | Anusree Mohan',
     heading:'Article Three',
     date:'August 12 2017',
-    content:`<p>This is the content for my second article.</p>`
+    content:`<p>This is the content for my third article.</p>`
 }
 };
 function createTemplate(data){
