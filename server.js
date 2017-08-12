@@ -6,21 +6,23 @@ var app = express();
 app.use(morgan('combined'));
 
 
-
-var articleOne ={
+var articles ={
+articleOne :{
     title:'Article One | Anusree Mohan',
     heading:'Article One',
     date:'August 12 2017',
     content:`<p>This is the content for my first article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.</p>
                 <p>This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.</p>
                    <p>This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.</p>`
+},
+articleTwo :{},
+articleThree :{}
 };
-
 function createTemplate(data){
     var heading = data.heading;
     var title   = data.title;
     var date    = data.date;
-    var content = data.content
+    var content = data.content;
 var htmlTemplate = `
 <html>
     <head>
