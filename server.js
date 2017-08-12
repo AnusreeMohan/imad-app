@@ -17,7 +17,7 @@ var articleOne ={
 var htmlTemplate = `
 <html>
     <head>
-        <title>Article One | Anusree Mohan</title>
+        <title>${heading}</title>
         <meta name=viewport content="width=device-width initial-scale=1"/>
         <link href="/ui/style.css" rel="stylesheet" />
     </head>
@@ -25,11 +25,10 @@ var htmlTemplate = `
         <div class="container">
             <div><a href="/">Home</a></div>
             <hr>
-            <h3>Article One</h3>
-            <div>August 12 2016</div>
-            <div><p>This is the content for my first article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.</p>
-                <p>This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.</p>
-                   <p>This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.</p>
+            <h3>${title}</h3>
+            <div>${date}</div>
+            <div>
+            ${content}
                </div>
            </div>
     </body>
