@@ -5,6 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+
+
 var articleOne ={
     title:'Article One | Anusree Mohan',
     heading:'Article One',
@@ -14,6 +16,7 @@ var articleOne ={
                    <p>This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.This is the content for my article.</p>`
 };
 
+function createTemplate(data){
 var htmlTemplate = `
 <html>
     <head>
@@ -32,8 +35,9 @@ var htmlTemplate = `
                </div>
            </div>
     </body>
-</html>
-`;
+</html>`;
+}
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
