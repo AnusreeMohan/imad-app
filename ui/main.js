@@ -1,13 +1,21 @@
 //counter code
 var button = document.getElementById('counter');
-var counter = 0;
+
 button.onclick = function(){
-    //Make a response o the counter variable
-    
+    //create a request object
+    var request = new XMLHttpRequest();
     //Captute the response and store it in a variable
-    
-    //Render the vriable in the correct span
-    counter = counter+1;
-    var span = document.getElementById('count');
-    span.innerHTML = count.toString();
+    request.onreadystatechange = function(){
+        if(request.readyState === XMLHttpRequest.DONE){
+            //some action
+            if(request.status === 200){
+                var counter = request.responseText;
+                var span = document.getElementById('count');
+                span.innerHTML = count.toString();
+            }
+        }
+    };
+    //Make a request
+   
+   
 };
